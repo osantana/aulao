@@ -1,3 +1,5 @@
+arquivo = input("Informe o nome do arquivo CSV:")
+
 notas = []
 
 while True:
