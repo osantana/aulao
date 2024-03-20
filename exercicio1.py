@@ -38,21 +38,3 @@ print(f"{'Nome':40s} | {'RA':9s} | {'A1':3s} | {'A2':3s} | {'A3':3s} | {'Final':
 
 for nome, ra, a1, a2, a3, nota in notas:
     print(f"{nome:40s} | {ra:9s} | {a1:-3d} | {a2:-3d} | {a3:-3d} | {nota:-5d}")
-
-
-"""
- +-----,
- o     |
-/|\    |
-/ \    |
--------+---
-1. cabeça
-2. tronco
-3. braço esq.
-4. braço dir.
-5. perna esq.
-6. perna dir.
-
-20 palavras entre 5 e 12 letras
-ignora acentos, maiúsculas, minúsculas, símbolos e números
-"""
