@@ -33,11 +33,6 @@ while True:
         (nome, ra, a1, a2, a3, sum(resultados))
     )
 
-    # nota = sum(resultados)
-    # notas.append(
-    #     (nome, ra, resultados[0], resultados[1], resultados[2], nota)
-    # )
-
 
 print(f"{'Nome':40s} | {'RA':9s} | {'A1':3s} | {'A2':3s} | {'A3':3s} | {'Final':3s}")
 
