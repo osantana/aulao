@@ -1,4 +1,5 @@
 arquivo = input("Informe o nome do arquivo CSV:")
+arquivo = open(arquivo)
 
 notas = []
 
