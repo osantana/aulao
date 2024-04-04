@@ -5,9 +5,11 @@ arquivo = open(arquivo)
 
 arquivo_csv = csv.reader(arquivo)
 
-print(f"{'Nome':40s} | {'RA':9s} | {'A1':3s} | {'A2':3s} | {'A3':3s} | {'Final':3s}")
+registros_ordenados = sorted(arquivo_csv, key=lambda x: (x[2], x[3]))
 
-for registro in arquivo_csv:
+print(f"{'Nome':30s} | {'RA':9s} | {'Curso':25s} | {'UC':30s} | {'A1':3s} | {'A2':3s} | {'A3':3s} | {'Final':3s}")
+
+for registro in registros_ordenados:
     if not registro:
         continue
 
@@ -21,7 +23,7 @@ for registro in arquivo_csv:
     a3 = int(a3)
     nota = a1 + a2 + a3
 
-    print(f"{nome:40s} | {ra:9s} | {a1:-3d} | {a2:-3d} | {a3:-3d} | {nota:-5d}")
+    print(f"{nome:30s} | {ra:9s} | {curso:25s} | {uc:30s} | {a1:-3d} | {a2:-3d} | {a3:-3d} | {nota:-5d}")
 
 """
 Atividade:
